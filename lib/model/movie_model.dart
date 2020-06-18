@@ -23,7 +23,7 @@ class MovieModel {
   : id = json['id'],
     popularity = json['popularity'],
     title = json['title'],
-    backPoster = json['backPoster'],
+    backPoster = json['backdrop_path'],
     poster = json['poster'],
     overview = json['overview'],
     rating = json['vote_average'].toDouble();

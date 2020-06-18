@@ -1,5 +1,4 @@
 
-import 'package:mdbapp/model/movie_response.dart';
 import 'package:mdbapp/model/person_response.dart';
 import 'package:mdbapp/repository/movie_repository.dart';
 import 'package:rxdart/subjects.dart';

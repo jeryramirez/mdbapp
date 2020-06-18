@@ -12,6 +12,7 @@ class MovieResponse{
   );
 
   MovieResponse.fromJson(Map<String, dynamic> json)
+  
   : movies = (json['results'] as List).map((movie) => new MovieModel.fromJson(movie)).toList(),
     error = '';
 

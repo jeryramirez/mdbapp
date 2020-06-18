@@ -1,5 +1,4 @@
 
-import 'package:mdbapp/model/movie_model.dart';
 
 class PersonResponse{
 

@@ -15,7 +15,7 @@ dependencies:
 
  
   cupertino_icons: ^0.1.3
-  dio: ^2.1.13
+  http:
   bloc: ^3.0.0
   rxdart: ^0.23.1
   eva_icons_flutter: ^2.0.0
