@@ -1,6 +1,4 @@
 
-
-
 import 'package:mdbapp/model/movie_model.dart';
 
 class MovieResponse{
@@ -14,11 +12,10 @@ class MovieResponse{
   );
 
   MovieResponse.fromJson(Map<String, dynamic> json)
-  : movies = (json['results'] as List).map((i) => new MovieModel.fromJson(i)).toList(),
-    error ='';
+  : movies = (json['results'] as List).map((movie) => new MovieModel.fromJson(movie)).toList(),
+    error = '';
 
   MovieResponse.withError(String errorValue)
   : movies = List(),
     error = errorValue;
-
 }
