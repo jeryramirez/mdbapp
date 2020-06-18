@@ -4,10 +4,10 @@ import 'package:mdbapp/bloc/get_now_playing_bloc.dart';
 import 'package:mdbapp/model/movie_response.dart';
 
 //Widgets
-import 'package:mdbapp/widgets/now_playing/error_widget.dart';
-import 'package:mdbapp/widgets/now_playing/now_playing/now_playing_widget.dart';
+import '../error_widget.dart';
+import 'package:mdbapp/widgets/now_playing/now_playing_widget.dart';
 
-import 'loading_widget.dart';
+import '../loading_widget.dart';
 
 class NowPlaying extends StatefulWidget {
   @override

@@ -3,20 +3,20 @@ import 'package:mdbapp/model/genre_model.dart';
 
 class GenreResponse{
 
-  final List<GenreModel> movies;
+  final List<GenreModel> genres;
   final String error;
 
   GenreResponse(
-    this.movies, 
+    this.genres, 
     this.error
   );
 
   GenreResponse.fromJson(Map<String, dynamic> json)
-  : movies = (json['results'] as List).map((i) => new GenreModel.fromJson(i)).toList(),
+  : genres = (json['results'] as List).map((i) => new GenreModel.fromJson(i)).toList(),
     error ='';
 
   GenreResponse.withError(String errorValue)
-  : movies = List(),
+  : genres = List(),
     error = errorValue;
 
 }

@@ -5,7 +5,7 @@ import 'package:mdbapp/model/genre_response.dart';
 import 'package:mdbapp/repository/movie_repository.dart';
 import 'package:rxdart/subjects.dart';
 
-class GenresListBloc {
+class GenresBloc {
 
   final MovieRepository _repository = MovieRepository();
   final BehaviorSubject<GenreResponse> _subject = BehaviorSubject<GenreResponse>();
@@ -27,4 +27,4 @@ class GenresListBloc {
   
 }
 
-final genreBloc = GenresListBloc();
+final genresBloc = GenresBloc();
